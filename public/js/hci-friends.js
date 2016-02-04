@@ -44,3 +44,9 @@ function anagrammedName(name) {
 		return name;
 	}
 }
+
+$('#friendname h3').click(function(event) {
+	event.preventDefault();
+	var name = $(this).text();
+	$(this).text(anagrammedName(name));	
+});
